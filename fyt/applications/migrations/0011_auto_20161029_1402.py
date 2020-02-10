@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
             name='LeaderTripTypeChoice',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, verbose_name='ID', serialize=False)),
-                ('preference', models.CharField(choices=[('PREFER', 'prefer'), ('AVAILABLE', 'available'), ('NOT AVAILABLE', 'not available')], max_length=20)),
+                ('preference', models.CharField(choices=[('PREFER', 'prefer'), ('AVAILABLE', 'willing'), ('NOT AVAILABLE', 'unwilling/unable')], max_length=20)),
                 ('application', models.ForeignKey(to='applications.LeaderSupplement', on_delete=models.CASCADE)),
                 ('triptype', models.ForeignKey(to='trips.TripType', on_delete=models.CASCADE)),
             ],
