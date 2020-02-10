@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='leadersupplement',
             name='availability',
-            field=models.TextField(blank=True, verbose_name='Looking at the Trips descriptions, please feel free to use this space to address any concerns or explain your availability. If applicable, please also elaborate on any particular trips or activities that you absolutely CANNOT participate in. All information in this application will remain confidential.'),
+            field=models.TextField(blank=True, verbose_name='Looking at the Trips descriptions, please feel free to use this space to address any concerns you might have about leading certain trips. All information in this application will remain confidential.'),
         ),
     ]
