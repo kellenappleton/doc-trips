@@ -441,7 +441,7 @@ class Volunteer(MedicalMixin, DatabaseModel):
     )
     # TODO: rewrite this/connect to croo_willing/leader_willing
     role_preference = models.CharField(
-        "While Trips Directorate will place you, we would like to "
+        "While the Trips Steering Commitee will place you, we would like to "
         "know your preferences. If you are submitting a Trip Leader "
         "application AND a Crooling application, please indicate which "
         "position you prefer. If you are only applying to one position, "
@@ -455,10 +455,7 @@ class Volunteer(MedicalMixin, DatabaseModel):
         'I would like to be considered for a trip leader position.', default=False
     )
     croo_willing = models.BooleanField(
-        'I would like to be considered for a crooling position. (NOTE: '
-        'students who are taking classes this sophomore summer can NOT apply, '
-        'given the conflict of dates.)',
-        default=False,
+        'I would like to be considered for a crooling position.', default=False,
     )
 
     # ------ certs -------
